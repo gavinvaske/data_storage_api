@@ -4,6 +4,7 @@
   "description": "The purpose of this project is to be an API that a user can interact with to CRUD various personal data. This personal data can be anything from notes, contacts, places, memories, and anything else, there are no limitations. A future goal is that this data can then be accessed and displayed graphically by other fronend applications.",
   "main": "app/index.js",
   "scripts": {
+    "nodemon": "nodemon application/index.js",
     "start": "node application/index.js",
     "test": "jest",
     "lint": "./node_modules/.bin/eslint .",
@@ -14,9 +15,11 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "8.18.0",
-    "jest": "28.1.1"
+    "jest": "28.1.1",
+    "nodemon": "2.0.16"
   },
   "dependencies": {
+    "@okta/jwt-verifier": "2.3.0",
     "dotenv": "16.0.1",
     "express": "4.17.2"
   }
